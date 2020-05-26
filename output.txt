@@ -1,0 +1,13 @@
+BlackTea,Pizza
+BreadButter,Burger
+BreadButter,Cappucci
+BreadButter,ChocolateCake
+Burger,Pizza
+ChocolateCake,Cappucci
+Cappucci,Juice
+ChocolateCake,Pizza
+Coffee,Desserts
+Coffee,Sandwich
+Tea,Desserts
+Tea,Wafers
+Tea,cheesecake

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Movie page</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.mySlides {display:none}
+		
+		</style>
+	
+
+	</head>
+	<body>
+		<div class="header">
+		<h1 style="color:lightgrey;font-family:lucida calligraphy;">Movie Ticket Booking Center</h1>
+			
+				<a href="login.php"><BUTTON>Login</button></a>
+				<a href="register.php"><BUTTON>Signup</button></a>
+			
+		</div>
+		
+		<center>
+		<div class="slideshow-container" style="max-width:99%">
+		  <img class="mySlides" src="movies/1.jpg" >
+		  <img class="mySlides" src="movies/2.jpg" >
+		  <img class="mySlides" src="movies/3.jpg" >
+		  
+			<span class="dot" ></span>
+			<span class="dot" ></span>
+			<span class="dot" ></span>
+		 </div>
+		</center>
+
+
+	<script>
+		var myIndex=0;
+		carousel();
+		function carousel() {
+		var i;
+		var dots = document.getElementsByClassName("dot");
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none"; 
+			dots[i].style.background="#bbb";
+		}  
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1;}    
+		x[myIndex-1].style.display = "block";
+		dots[myIndex-1].style.background="#717171";
+		setTimeout(carousel,3000); // Change image every 3 seconds
+		}
+
+	</script>
+
+	</body>
+</html>	
